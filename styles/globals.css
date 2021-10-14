@@ -1,17 +1,190 @@
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
 
+:root {
+  --black: #000;
+  --white: #fff;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: 'Holtwood One SC', serif;
 }
 
-a {
-  color: inherit;
+body {
+  overflow-x: hidden;
+}
+
+a:hover {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+*:hover {
+  transition: all .3s;
 }
+
+/* CARD */
+
+.card {
+  background: var(--black);
+  border: 3px solid var(--black);
+  position: relative;
+  padding: 15px;
+}
+
+.card:before {
+  position: absolute;
+  display: block;
+  content: '';
+  border: 1px solid var(--white);
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: var(--black);
+  margin: -15px;
+}
+
+.card * {
+  color: var(--white);
+}
+
+/* CARD END */
+
+/* HEADER */
+
+nav {
+  background: var(--black);
+  border-bottom: 3px solid var(--black);
+  position: relative;
+}
+
+nav > .nav-items {
+  margin: auto 20%;
+}
+
+nav:before {
+  position: absolute;
+  display: block;
+  content: '';
+  border-bottom: 1px solid var(--white);
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: var(--black);
+}
+
+nav > .nav-items > .nav-item {
+  margin: 0 auto;
+  padding: 5px 7px;
+  position: relative;
+  overflow: hidden;
+  z-index: 4;
+  display: inline-block;
+  transition: color 500ms;
+}
+
+nav > .nav-items > .nav-item::before {
+  position: absolute;
+  top: 120%;
+  right: -25%;
+  width: 150%;
+  height: 150%;
+  content: ' ';
+  display: block;
+  background: var(--white);
+  transition: top 1s;
+  animation: 400ms linear 0s infinite normal forwards paused fillUp;
+  z-index: -1;
+}
+
+nav > .nav-items > .nav-item::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  content: ' ';
+  display: block;
+  z-index: -2;
+}
+
+nav > .nav-items > .nav-item:hover {
+  color: var(--black);
+}
+
+nav > .nav-items > .nav-item:hover::before {
+  top: -25%;
+  animation-play-state: running;
+}
+
+nav > .nav-items > .nav-item > a {
+  font-size: 1.3rem;
+}
+
+nav > .nav-items > .nav-item:hover > a {
+  color: #000;
+}
+
+
+.header-wrapper > .header-table {
+  position: absolute;
+	left: 50%;
+	transform: translate(-50%, -3px);
+  z-index: 1;
+}
+
+.header-wrapper > .header-table > .card-wrapper > .card {
+  border-top: none;
+}
+
+.header-wrapper > .header-table > .card-wrapper > .card:before {
+  border-top: none;
+}
+
+.header-wrapper > .header-table > .card-wrapper > .card > .logo > .image-wrapper {
+  margin: 0px 10px 5px 10px;
+}
+
+.header-wrapper > .header-table > .card-wrapper > .card > .logo > .image-wrapper > div {
+  height: 85px;
+  max-width: 100%;
+}
+
+.header-wrapper > .header-table > .card-wrapper > .card > .program > .row > .col {
+  margin: 10px 15px;
+}
+
+.header-wrapper > .header-table > .card-wrapper > .card > .program > .row > .col > .row > .header-table-item {
+  font-size: 1rem;
+}
+
+.header-wrapper > .header-table > .card-wrapper > .card > .program > .row > .col > .row > .header-table-item:hover {
+  text-decoration: underline;
+}
+
+/* HEADER END */
+
+/* KEYFRAMES */
+
+@keyframes fillUp {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(6deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(-6deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+/* KEYFRAMES END */

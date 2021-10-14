@@ -3,12 +3,13 @@ import Image from 'next/image'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
-import styles from '@styles/Kontakty.module.css'
+import styles from '@styles/Aktuality.module.css'
 
-export default function Kontakty() {
+export default function Aktuality() {
   return (
     <div className="page-wrapper">
       <Header/>
+
       <Footer/>
     </div>
   )
