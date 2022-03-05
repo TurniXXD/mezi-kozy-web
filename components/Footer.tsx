@@ -7,15 +7,15 @@ export default function Footer() {
 	return (
 		<div className="footer-wrapper mt-20">
 			<div className="container">
-				<div className="flex-row flex-center space-x-24 pt-16">
-					<div className="flex-wrap flex-col">
+				<div className="flex-row flex-center space-x-8 sm:space-x-24 pt-16">
+					<div className="flex-col">
 						<Link href="/">
 							<a className="image-wrapper">
 								<Image src={img1} alt="fajne" width="100" height="120" />
 							</a>
 						</Link>
 					</div>
-					<div className="flex-wrap flex-col">
+					<div className="flex-col">
 						<div className="flex-row">
 							<Link href="/">
 								<a className="nav-item">HOME</a>
@@ -67,14 +67,14 @@ export default function Footer() {
 					</div>
 					<div className="flex-col">
 						<Link href="mailto:kontakt@mezikozyband.cz">
-							<a className="nav-item">
+							<a className="nav-item mb-1">
 								<span className="typcn typcn-mail text-4xl"></span>
 							</a>
 						</Link>
 					</div>
 				</div>
-				<div className="flex-row flex-center mt-8">
-					<div className="flex-wrap flex-col">
+				<div className="flex-row flex-center mt-8 pb-4">
+					<div className="flex-col">
 						<span className="text-sm">&copy; {new Date().getFullYear()} | Mezi Kozy</span>
 					</div>
 				</div>

@@ -19,10 +19,10 @@ export default function Kapela({ headerPosts, people }: { headerPosts: any; peop
 			<Header headerPosts={headerPosts} />
 			<ParalaxHero image={img1} />
 			<div className="container mt-20">
-				<div className="flex-row flex-center space-x-24">
-					<div className="flex-col">
+				<div className="flex flex-wrap flex-center sm:space-x-12 md:space-x-24">
+					<div className="flex-col mb-8 md:mb-0">
 						<div className="flex-row">
-							<h2 className="text-4xl mb-2">Jakub Vantuch</h2>
+							<h2 className="text-3xl sm:text-4xl mb-2">Jakub Vantuch</h2>
 						</div>
 						<div className="flex-row flex-center">
 							<span className="text-lg mb-4">Kytara a zpěv</span>
@@ -67,7 +67,7 @@ export default function Kapela({ headerPosts, people }: { headerPosts: any; peop
 					</div>
 					<div className="flex-col">
 						<div className="flex-row">
-							<h2 className="text-4xl mb-2">Martin Kopřiva</h2>
+							<h2 className="text-3xl sm:text-4xl mb-2">Martin Kopřiva</h2>
 						</div>
 						<div className="flex-row flex-center">
 							<span className="text-lg mb-4">Bicí, kytara, basa</span>

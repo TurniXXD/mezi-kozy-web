@@ -25,9 +25,10 @@ export default function Galerie({ events, headerPosts }: { events: any; headerPo
 						<h2 className="text-4xl">Videa z akcí</h2>
 					</div>
 				</div>
-				<div className="flex-row flex-center space-x-24">
-					<div className="flex-col w-3/12">
+				<div className="flex flex-wrap flex-center xl:space-x-24">
+					<div className="flex-col flex-center w-full xl:w-3/12">
 						<iframe
+							className="max-h-full w-60 sm:w-96"
 							width="400"
 							height="200"
 							src="https://www.youtube.com/embed/PTQpzaPPw3w"
@@ -36,18 +37,20 @@ export default function Galerie({ events, headerPosts }: { events: any; headerPo
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						/>
 					</div>
-					<div className="flex-col w-3/12">
+					<div className="flex-col flex-center w-full mt-12 xl:w-3/12 xl:mt-0">
 						<iframe
+							className="max-h-full w-60 sm:w-96"
 							width="400"
 							height="200"
-							src="https://www.youtube.com/embed/kZxZ30HYOUc"
+							src="https://www.youtube.com/embed/PTQpzaPPw3w"
 							title="YouTube video player"
 							frameBorder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						/>
 					</div>
-					<div className="flex-col w-3/12">
+					<div className="flex-col flex-center w-3/12 ytb-last">
 						<iframe
+							className="max-h-full w-60 sm:w-96"
 							width="400"
 							height="200"
 							src="https://www.youtube.com/embed/kZxZ30HYOUc"

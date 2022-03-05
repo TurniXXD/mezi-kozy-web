@@ -46,8 +46,9 @@ export default function Aktuality({ headerPosts, posts }: { headerPosts: any; po
 										také možnost sledovat online na našem instagramu.
 									</p>
 								</div>
-								<div className="flex-row">
+								<div className="flex-row hidden sm:flex">
 									<iframe
+										className="hidden sm:block"
 										width="450"
 										height="300"
 										src="https://www.youtube.com/embed/PTQpzaPPw3w"
@@ -86,8 +87,9 @@ export default function Aktuality({ headerPosts, posts }: { headerPosts: any; po
 										ve výsledku zachrání nevinné životy.
 									</p>
 								</div>
-								<div className="flex-row">
+								<div className="flex-row hidden sm:flex">
 									<iframe
+										className="hidden sm:block"
 										width="450"
 										height="300"
 										src="https://www.youtube.com/embed/PTQpzaPPw3w"

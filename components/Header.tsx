@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Card from '@components/Card'
@@ -25,10 +26,54 @@ const postsTestData = [
 ]
 
 export default function Header({ posts }: any) {
+	const [menu, setMenu] = useState(false)
+	const handleMenu = () => {
+		setMenu((state: boolean) => !state)
+
+		useEffect(() => {
+			const menuEl = document.getElementById('menu')
+			const links = document.getElementsByClassName('nav-link')
+			const container = document.getElementById('navbar-mobile')
+
+			// if (menu)  menuEl.className = 'active'
+			// else  menuEl.className = 'not-active'
+			// if (menu.className == 'not-active') menu.className = 'active'
+			// else menu.className = 'not-active'
+
+			// for(var i = 0; i < links.length; i++ ) {
+			// 	if (links[i].style.display === "flex") {
+			// 		links[i].style.display = "none";
+			// 		links[i].style.flexDirection = 'unset'
+			// 		links[i].style.alignItems = 'unset'
+			// 		container.style.height='12.5vh'
+			// 		document.getElementsByTagName('body')[0].style.overflow = "auto"
+			// 	} else {
+			// 		links[i].style.display = "flex";
+			// 		links[i].style.flexDirection = 'row'
+			// 		links[i].style.alignItems = 'center'
+			// 		container.style.height='100vh'
+			// 		document.getElementsByTagName('body')[0].style.overflow = "hidden"
+			// 	}
+			// }
+		}, [])
+	}
+
 	return (
 		<div className="header-wrapper">
-			<nav className="">
-				<ul className="flex-row flex-center nav-items">
+			<nav>
+				<ul id="mobile-nav" className="visible xl:hidden flex-row nav-items mx-0 justify-between">
+					<li className="mobile-nav-item flex-col nav-item ml-2 sm:ml-8">
+						<Link href="/">
+							<a className="nav-item">MEZI KOZY</a>
+						</Link>
+					</li>
+					<div id="menu" onClick={handleMenu} className="mobile-nav-item flex-col nav-item mr-2 sm:mr-8 not-active">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</ul>
+				<ul className="tbl-break-hide flex-row justify-center nav-items">
 					<li className="flex-col nav-item ">
 						<Link href="/">
 							<a className="nav-item ">HOME</a>
@@ -57,7 +102,7 @@ export default function Header({ posts }: any) {
 					</li>
 				</ul>
 			</nav>
-			<div className="flex-row header-table">
+			<div className="header-table tbl-break-hide flex-row">
 				<Card>
 					<div className="flex-col flex-center logo">
 						<Link href="/">

@@ -50,8 +50,8 @@ export default function Home({ headerPosts, home }: { headerPosts: any; home: an
 				</div>
 			</Slider>
 			<div className="container mt-20">
-				<div className="flex-row flex-center-h space-x-16">
-					<div className="flex-col w-4/12">
+				<div className="flex-row sm:justify-center space-x-16">
+					<div className="flex-col xl:w-4/12">
 						<div className="flex-row mb-20">
 							<div className="flex-col">
 								<div className="flex-row">
@@ -75,8 +75,9 @@ export default function Home({ headerPosts, home }: { headerPosts: any; home: an
 										také možnost sledovat online na našem instagramu.
 									</p>
 								</div>
-								<div className="flex-row">
+								<div className="flex-row hidden sm:flex">
 									<iframe
+										className="hidden sm:block"
 										width="450"
 										height="300"
 										src="https://www.youtube.com/embed/PTQpzaPPw3w"
@@ -115,8 +116,9 @@ export default function Home({ headerPosts, home }: { headerPosts: any; home: an
 										ve výsledku zachrání nevinné životy.
 									</p>
 								</div>
-								<div className="flex-row">
+								<div className="flex-row hidden sm:flex">
 									<iframe
+										className="hidden sm:block"
 										width="450"
 										height="300"
 										src="https://www.youtube.com/embed/PTQpzaPPw3w"
@@ -128,8 +130,8 @@ export default function Home({ headerPosts, home }: { headerPosts: any; home: an
 							</div>
 						</div>
 					</div>
-					<div className="flex-col w-3/12">
-						<Card>
+					<div className="tbl-break-hide flex-col flex w-3/12">
+						<Card col={true}>
 							<div className="flex-row h-full">
 								<div className="flex-col m-4">
 									<div className="flex-row mb-4">
@@ -168,9 +170,10 @@ export default function Home({ headerPosts, home }: { headerPosts: any; home: an
 						<h2 className="text-4xl">Videa z akcí</h2>
 					</div>
 				</div>
-				<div className="flex-row flex-center space-x-24">
-					<div className="flex-col w-3/12">
+				<div className="flex flex-wrap flex-center xl:space-x-24">
+					<div className="flex-col flex-center w-full xl:w-3/12">
 						<iframe
+							className="max-h-full w-60 sm:w-96"
 							width="400"
 							height="200"
 							src="https://www.youtube.com/embed/PTQpzaPPw3w"
@@ -179,18 +182,20 @@ export default function Home({ headerPosts, home }: { headerPosts: any; home: an
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						/>
 					</div>
-					<div className="flex-col w-3/12">
+					<div className="flex-col flex-center w-full mt-12 xl:w-3/12 xl:mt-0">
 						<iframe
+							className="max-h-full w-60 sm:w-96"
 							width="400"
 							height="200"
-							src="https://www.youtube.com/embed/kZxZ30HYOUc"
+							src="https://www.youtube.com/embed/PTQpzaPPw3w"
 							title="YouTube video player"
 							frameBorder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						/>
 					</div>
-					<div className="flex-col w-3/12">
+					<div className="flex-col flex-center w-3/12 ytb-last">
 						<iframe
+							className="max-h-full w-60 sm:w-96"
 							width="400"
 							height="200"
 							src="https://www.youtube.com/embed/kZxZ30HYOUc"

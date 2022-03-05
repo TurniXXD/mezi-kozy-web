@@ -3,7 +3,13 @@ module.exports = {
 	theme: {
 		container: {
 			padding: '4rem',
-			center: true,
+			maxWidth: {
+				xl: '1536px',
+			},
+			center: {
+				xl: true,
+				'2xl': true,
+			},
 		},
 	},
 	plugins: [],
