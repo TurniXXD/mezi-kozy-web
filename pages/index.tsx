@@ -8,6 +8,10 @@ import Link from 'next/link'
 
 //import { homeQuery } from '@graphql/queries.graphql'
 
+import img1 from '/public/images/1-krmelec-koncert.png'
+import img2 from '/public/images/2-krmelec-koncert.png'
+import img3 from '/public/images/3-krmelec-koncert.png'
+
 import styles from '@styles/Home.module.css'
 
 export default function Home({ headerPosts, home }: { headerPosts: any; home: any }) {
@@ -31,17 +35,17 @@ export default function Home({ headerPosts, home }: { headerPosts: any; home: an
 			<Slider {...settings}>
 				<div className="flex-row bg-cover">
 					<div className="paralax-wrapper next-image-wrapper">
-						<Image src="/public/images/1-krmelec-koncert.png" alt="fajne" layout="fill" />
+						<Image src={img1} alt="fajne" layout="fill" />
 					</div>
 				</div>
 				<div className="flex-row bg-cover">
 					<div className="paralax-wrapper next-image-wrapper">
-						<Image src="/public/images/2-krmelec-koncert.png" alt="fajne" layout="fill" />
+						<Image src={img2} alt="fajne" layout="fill" />
 					</div>
 				</div>
 				<div className="flex-row bg-cover">
 					<div className="paralax-wrapper next-image-wrapper">
-						<Image src="/public/images/3-krmelec-koncert.png" alt="fajne" layout="fill" />
+						<Image src={img3} alt="fajne" layout="fill" />
 					</div>
 				</div>
 			</Slider>

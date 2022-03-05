@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
+import img1 from '/public/images/logo/logo-black.png'
+
 export default function Footer() {
 	return (
 		<div className="footer-wrapper mt-20">
@@ -9,7 +11,7 @@ export default function Footer() {
 					<div className="flex-wrap flex-col">
 						<Link href="/">
 							<a className="image-wrapper">
-								<Image src="/public/images/logo/logo-black.png" alt="fajne" width="100" height="120" />
+								<Image src={img1} alt="fajne" width="100" height="120" />
 							</a>
 						</Link>
 					</div>

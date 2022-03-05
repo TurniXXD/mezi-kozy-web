@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Card from '@components/Card'
 
+import img1 from '/public/images/logo/logo-black.png'
+
 // function for splitting posts in equal halfs => two columns
 const postsTestData = [
 	{
@@ -60,7 +62,7 @@ export default function Header({ posts }: any) {
 					<div className="flex-col flex-center logo">
 						<Link href="/">
 							<a className="image-wrapper">
-								<Image src="/public/images/logo/logo-black.png" alt="fajne" width="100" height="120" />
+								<Image src={img1} alt="fajne" width="100" height="120" />
 							</a>
 						</Link>
 					</div>

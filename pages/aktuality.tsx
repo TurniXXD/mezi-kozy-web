@@ -7,6 +7,8 @@ import ParalaxHero from '@components/ParalaxHero'
 
 //import { postsQuery } from '@graphql/queries.graphql'
 
+import img1 from '/public/images/paralax/fno.png'
+
 import styles from '@styles/Aktuality.module.css'
 
 export default function Aktuality({ headerPosts, posts }: { headerPosts: any; posts: any }) {
@@ -17,7 +19,7 @@ export default function Aktuality({ headerPosts, posts }: { headerPosts: any; po
 	return (
 		<div className="page-wrapper">
 			<Header headerPosts={headerPosts} />
-			<ParalaxHero image="/public/images/paralax/fno.png" />
+			<ParalaxHero image={img1} />
 			<div className="container mt-20">
 				<div className="flex-row flex-center">
 					<div className="flex-col w-4/12">
