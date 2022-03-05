@@ -1,19 +1,44 @@
-import React from 'react'
-import NextApp, { AppProps } from 'next/app'
+import React, { useEffect } from 'react'
+import App, { AppProps } from 'next/app'
 //import fetch from 'isomorphic-unfetch'
 import { withUrqlClient, NextUrqlAppContext } from 'next-urql'
+import { ApolloProvider } from '@apollo/client'
+// import { useApollo } from '@lib/apolloClient'
+//import { headerPostsQuery } from '@graphql/queries.graphql'
+import { Context } from '@lib/context'
 
-//import 'bootstrap/dist/css/bootstrap.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import '../styles/oxn.css'
+import 'typicons.font/src/font/typicons.css'
 import '../styles/globals.css'
 
-export default function App({ Component, pageProps, err }: AppProps & { err: any }) {
-  return <Component {...pageProps} err={err} />
+export default function NextApp({ Component, pageProps, headerPosts, err }: AppProps & { headerPosts: any; err: any }) {
+	//const apolloClient = useApollo(pageProps.initialApolloState)
+	const [context, setContext] = React.useState(headerPosts)
+
+	useEffect(() => {
+		document.documentElement.lang = 'cs'
+	}, [])
+
+	return (
+		// <ApolloProvider client={apolloClient}>
+		//   <Context.Provider value={[context, setContext]}>
+		//     <Component {...pageProps} err={err} />
+		//   </Context.Provider>
+		// </ApolloProvider>
+		<Context.Provider value={[context, setContext]}>
+			<Component {...pageProps} err={err} />
+		</Context.Provider>
+	)
 }
 
-App.getInitialProps = async (ctx: NextUrqlAppContext) => {
-  const appProps = await NextApp.getInitialProps(ctx)
-  return { ...appProps }
-}
+// NextApp.getInitialProps = async (ctx: any, context: any) => {
+// 	const appProps = await App.getInitialProps(ctx)
+// 	const headerPosts = await headerPostsQuery
+
+// 	return {
+// 		...appProps,
+// 		pageProps: { headerPosts },
+// 		revalidate: 1,
+// 	}
+// }

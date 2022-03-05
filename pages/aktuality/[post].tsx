@@ -5,12 +5,12 @@ import Footer from '@components/Footer'
 
 import styles from '@styles/Aktuality.module.css'
 
-export default function Aktuality() {
-  return (
-    <div className="page-wrapper">
-      <Header/>
+export default function AktualityPost() {
+	return (
+		<div className="page-wrapper">
+			<Header />
 
-      <Footer/>
-    </div>
-  )
+			<Footer />
+		</div>
+	)
 }
