@@ -31,17 +31,17 @@ export default function Home({ headerPosts, home }: { headerPosts: any; home: an
 			<Slider {...settings}>
 				<div className="flex-row bg-cover">
 					<div className="paralax-wrapper next-image-wrapper">
-						<Image src="/../public/images/1-krmelec-koncert.png" alt="fajne" layout="fill" />
+						<Image src="/public/images/1-krmelec-koncert.png" alt="fajne" layout="fill" />
 					</div>
 				</div>
 				<div className="flex-row bg-cover">
 					<div className="paralax-wrapper next-image-wrapper">
-						<Image src="/../public/images/2-krmelec-koncert.png" alt="fajne" layout="fill" />
+						<Image src="/public/images/2-krmelec-koncert.png" alt="fajne" layout="fill" />
 					</div>
 				</div>
 				<div className="flex-row bg-cover">
 					<div className="paralax-wrapper next-image-wrapper">
-						<Image src="/../public/images/3-krmelec-koncert.png" alt="fajne" layout="fill" />
+						<Image src="/public/images/3-krmelec-koncert.png" alt="fajne" layout="fill" />
 					</div>
 				</div>
 			</Slider>

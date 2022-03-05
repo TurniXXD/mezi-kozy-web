@@ -15,7 +15,7 @@ export default function Kapela({ headerPosts, people }: { headerPosts: any; peop
 	return (
 		<div className="page-wrapper">
 			<Header headerPosts={headerPosts} />
-			<ParalaxHero image="/../public/images/paralax/1-krmelec-koncert.png" />
+			<ParalaxHero image="/public/images/paralax/1-krmelec-koncert.png" />
 			<div className="container mt-20">
 				<div className="flex-row flex-center space-x-24">
 					<div className="flex-col">

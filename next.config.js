@@ -8,7 +8,7 @@ module.exports = {
 	//distDir: 'dist/functions/next',
 	env: {
 		API_URL: process.env.API_URL,
-		MEDIA_STORAGE_URL: process.env.MEDIA_STORAGE_URL,
+		//MEDIA_STORAGE_URL: process.env.MEDIA_STORAGE_URL,
 	},
 	module: {
 		rules: [
@@ -20,7 +20,7 @@ module.exports = {
 	},
 	publicRuntimeConfig: {
 		API_URL: process.env.API_URL,
-		MEDIA_STORAGE_URL: process.env.MEDIA_STORAGE_URL,
+		//MEDIA_STORAGE_URL: process.env.MEDIA_STORAGE_URL,
 	},
 	images: {
 		/*     deviceSizes: [640, 768, 1024, 1280, 1600],

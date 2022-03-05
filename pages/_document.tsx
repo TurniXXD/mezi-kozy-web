@@ -17,19 +17,19 @@ export default class CustomDocument extends Document {
 						description: "Hrajeme jak po hospodách tak i soukromých akcích. Ve světle posledních událostí výdělkem příspíváme na pomoc Ukrajině.",
 						images: [
 							{
-								url: '/../public/images/logo-l.png',
+								url: '/public/images/logo-l.png',
 								width: 1000,
 								height: 1000,
 								alt: 'Mezi kozy',
 							},
 							{
-								url: '/../public/images/logo-md.png',
+								url: '/public/images/logo-md.png',
 								width: 750,
 								height: 750,
 								alt: 'Mezi kozy',
 							},
 							{
-								url: '/../public/images/logo-s.png',
+								url: '/public/images/logo-s.png',
 								width: 500,
 								height: 500,
 								alt: 'Mezi kozy',

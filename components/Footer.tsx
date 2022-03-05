@@ -9,7 +9,7 @@ export default function Footer() {
 					<div className="flex-wrap flex-col">
 						<Link href="/">
 							<a className="image-wrapper">
-								<Image src="/../public/images/logo/logo-black.png" alt="fajne" width="100" height="120" />
+								<Image src="/public/images/logo/logo-black.png" alt="fajne" width="100" height="120" />
 							</a>
 						</Link>
 					</div>

@@ -16,7 +16,7 @@ export default function Galerie({ events, headerPosts }: { events: any; headerPo
 	return (
 		<div className="page-wrapper">
 			<Header headerPosts={headerPosts} />
-			<ParalaxHero image="/../public/images/paralax/2-krmelec-koncert.png" />
+			<ParalaxHero image="/public/images/paralax/2-krmelec-koncert.png" />
 			<div className="container mt-20">
 				<div className="flex-row flex-center mb-8">
 					<div className="flex-col">

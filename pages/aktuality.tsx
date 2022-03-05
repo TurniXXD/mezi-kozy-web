@@ -11,13 +11,13 @@ import styles from '@styles/Aktuality.module.css'
 
 export default function Aktuality({ headerPosts, posts }: { headerPosts: any; posts: any }) {
 	useEffect(() => {
-		document.title = 'Mezi kozy | Aktualitys'
+		document.title = 'Mezi kozy | Aktuality'
 	}, [])
 
 	return (
 		<div className="page-wrapper">
 			<Header headerPosts={headerPosts} />
-			<ParalaxHero image="/../public/images/paralax/fno.png" />
+			<ParalaxHero image="/public/images/paralax/fno.png" />
 			<div className="container mt-20">
 				<div className="flex-row flex-center">
 					<div className="flex-col w-4/12">

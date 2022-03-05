@@ -14,7 +14,7 @@ export default function Kontakty({ headerPosts }: { headerPosts: any }) {
 	return (
 		<div className="page-wrapper">
 			<Header headerPosts={headerPosts} />
-			<ParalaxHero image="/../public/images/paralax/3-krmelec-koncert.png" />
+			<ParalaxHero image="/public/images/paralax/3-krmelec-koncert.png" />
 			<div className="container mt-20"></div>
 
 			<Footer />
