@@ -27,11 +27,11 @@ export default function GalerieEvent({ event }: any) {
 	)
 }
 
-export async function getServerSideProps({ context, query }: any) {
-	const { event } = query
+// export async function getServerSideProps({ context, query }: any) {
+// 	const { event } = query
 
-	console.log(context)
-	return {
-		props: { event },
-	}
-}
+// 	console.log(context)
+// 	return {
+// 		props: { event },
+// 	}
+// }
