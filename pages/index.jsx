@@ -130,7 +130,7 @@ export default function Home({ headerPosts, home } /* : { headerPosts: any; home
 
 	return (
 		<div className="page-wrapper">
-			<Header headerPosts={headerPosts} />
+			<Header /* headerPosts={headerPosts} */ />
 			<Slider {...settings}>
 				<div className="flex-row bg-cover">
 					<div className="paralax-wrapper next-image-wrapper">

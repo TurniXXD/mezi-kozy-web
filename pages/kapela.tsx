@@ -16,7 +16,7 @@ export default function Kapela({ headerPosts, people }: { headerPosts: any; peop
 
 	return (
 		<div className="page-wrapper">
-			<Header headerPosts={headerPosts} />
+			<Header /* headerPosts={headerPosts} */ />
 			<ParalaxHero image={img1} />
 			<div className="container mt-20">
 				<div className="flex flex-wrap flex-center sm:space-x-12 md:space-x-24">

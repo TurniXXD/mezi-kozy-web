@@ -111,7 +111,7 @@ export default function Kontakty({ headerPosts }) {
 
 	return (
 		<div className="page-wrapper">
-			<Header headerPosts={headerPosts} />
+			<Header /* headerPosts={headerPosts} */ />
 			<ParalaxHero image={img1} />
 			<div className="container px-7 sm:px-16 mt-20">
 				<div className="flex-row sm:justify-center sm:flex">
