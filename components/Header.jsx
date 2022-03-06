@@ -31,11 +31,7 @@ export default function Header(/*{ headerPosts } /* : any */) {
 	useEffect(() => {
 		const menuEl = document.getElementsByClassName('menu')[0]
 		const links = document.getElementsByClassName('links')[0]
-		const container = document.getElementById('navbar-mobile')
 
-		console.log('kokot')
-		// if (menu)  menuEl.className = 'active'
-		// else  menuEl.className = 'not-active'
 		if (menu) {
 			menuEl.className = 'menu mobile-nav-item active'
 			links.className = 'links nav-items flex-col xl:flex-row justify-center pb-8 xl:pb-0'
@@ -43,22 +39,6 @@ export default function Header(/*{ headerPosts } /* : any */) {
 			menuEl.className = 'menu mobile-nav-item not-active'
 			links.className = 'links nav-items flex-col xl:flex-row justify-center pb-8 xl:pb-0 tbl-break-hide'
 		}
-
-		// for (var i = 0; i < links.length; i++) {
-		// 	if (links[i].style.display === 'flex') {
-		// 		links[i].style.display = 'none'
-		// 		links[i].style.flexDirection = 'unset'
-		// 		links[i].style.alignItems = 'unset'
-		// 		container.style.height = '12.5vh'
-		// 		document.getElementsByTagName('body')[0].style.overflow = 'auto'
-		// 	} else {
-		// 		links[i].style.display = 'flex'
-		// 		links[i].style.flexDirection = 'row'
-		// 		links[i].style.alignItems = 'center'
-		// 		container.style.height = '100vh'
-		// 		document.getElementsByTagName('body')[0].style.overflow = 'hidden'
-		// 	}
-		// }
 	}, [menu])
 
 	return (

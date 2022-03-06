@@ -114,7 +114,7 @@ export default function Kontakty({ headerPosts }) {
 			<Header /* headerPosts={headerPosts} */ />
 			<ParalaxHero image={img1} />
 			<div className="container px-7 sm:px-16 mt-20">
-				<div className="flex-row sm:justify-center sm:flex">
+				<div className="flex-row justify-center sm:flex">
 					<div className="flex-col">
 						<div className="flex-row flex-center mb-8">
 							<div className="flex-col">
@@ -135,7 +135,8 @@ export default function Kontakty({ headerPosts }) {
 								scrolling="no"
 							/>
 						</div>
-						<div className="flex-row flex-center space-x-8 mt-6">
+						<div className="hide-banner"></div>
+						<div className="flex-row flex-center space-x-8">
 							<div className="flex-col">
 								<Link href="https://www.facebook.com/mezikozy">
 									<a target="_blank" rel="noreferrer noopener" className="nav-item">

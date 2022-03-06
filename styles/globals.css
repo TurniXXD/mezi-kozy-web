@@ -272,16 +272,12 @@ nav>.nav-items>.nav-item:hover>a {
   flex-direction: row;
 }
 
-#JotFormIFrame-220642188337356 form {
-  background: #ffffff !important;
-}
-
-.supernova body {
-  background-color: #ffffff;
-}
-
-.formFooter {
-  display: none;
+.hide-banner {
+  background: var(--white);
+  width: 100%;
+  height: 50px;
+  margin-top: -50px;
+  z-index: 2;
 }
 
 /* FOOTER */

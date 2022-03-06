@@ -336,6 +336,7 @@ export default function Home({ headerPosts, home } /* : { headerPosts: any; home
 								scrolling="no"
 							/>
 						</div>
+						<div className="hide-banner"></div>
 					</div>
 				</div>
 			</div>
