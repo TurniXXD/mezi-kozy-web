@@ -18,7 +18,7 @@ export default function Aktuality({ headerPosts, posts }: { headerPosts: any; po
 
 	return (
 		<div className="page-wrapper">
-			<Header headerPosts={headerPosts} />
+			<Header /* headerPosts={headerPosts} */ />
 			<ParalaxHero image={img1} />
 			<div className="container mt-20">
 				<div className="flex-row sm:justify-center space-x-16">

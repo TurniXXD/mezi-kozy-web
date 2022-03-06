@@ -25,7 +25,7 @@ const postsTestData = [
 	},
 ]
 
-export default function Header({ headerPosts } /* : any */) {
+export default function Header(/*{ headerPosts } /* : any */) {
 	const [menu, setMenu] = useState(false)
 
 	useEffect(() => {
