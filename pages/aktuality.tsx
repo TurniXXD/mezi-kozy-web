@@ -21,8 +21,8 @@ export default function Aktuality({ headerPosts, posts }: { headerPosts: any; po
 			<Header headerPosts={headerPosts} />
 			<ParalaxHero image={img1} />
 			<div className="container mt-20">
-				<div className="flex-row flex-center">
-					<div className="flex-col w-4/12">
+				<div className="flex-row sm:justify-center space-x-16">
+					<div className="flex-col xl:w-4/12">
 						<div className="flex-row mb-20">
 							<div className="flex-col">
 								<div className="flex-row">

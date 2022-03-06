@@ -255,6 +255,10 @@ nav>.nav-items>.nav-item:hover>a {
   height: 70vh;
 }
 
+.slick-arrow .slick-next {
+  display: none !important;
+}
+
 .video {
   object-fit: cover;
   width: 100%;
@@ -267,6 +271,18 @@ nav>.nav-items>.nav-item:hover>a {
   background-size: cover;
   display: flex;
   flex-direction: row;
+}
+
+#JotFormIFrame-220642188337356 form {
+  background: #ffffff !important;
+}
+
+.supernova body {
+  background-color: #ffffff;
+}
+
+.formFooter {
+  display: none;
 }
 
 /* FOOTER */

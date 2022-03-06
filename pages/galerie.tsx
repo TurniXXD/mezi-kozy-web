@@ -42,7 +42,7 @@ export default function Galerie({ events, headerPosts }: { events: any; headerPo
 							className="max-h-full w-60 sm:w-96"
 							width="400"
 							height="200"
-							src="https://www.youtube.com/embed/PTQpzaPPw3w"
+							src="https://www.youtube.com/embed/kZxZ30HYOUc"
 							title="YouTube video player"
 							frameBorder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -37,7 +37,7 @@ export default function Footer() {
 							</Link>
 						</div>
 						<div className="flex-row">
-							<Link href="/kotankty">
+							<Link href="/kontakty">
 								<a className="nav-item">KONTAKTY</a>
 							</Link>
 						</div>
