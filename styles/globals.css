@@ -156,11 +156,11 @@ nav>.nav-items>.nav-item:hover>a {
   color: #000;
 }
 
-.mobile-nav>#menu {
+#mobile-nav>li>.menu {
   height: 100%;
-  width: 48px;
+  width: 35px;
   cursor: pointer;
-  margin-right: 20px;
+  margin-right: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -168,11 +168,11 @@ nav>.nav-items>.nav-item:hover>a {
   padding-bottom: 10px;
 }
 
-.mobile-nav>#menu>span {
+#mobile-nav>li>.menu>span {
   display: block;
   width: 100%;
   border-radius: 5px;
-  height: 6px;
+  height: 4px;
   background: #fff;
   transition: all .3s;
   position: relative;
@@ -180,36 +180,35 @@ nav>.nav-items>.nav-item:hover>a {
   flex-direction: row;
 }
 
-
-.mobile-nav>.not-active span {
-  margin-top: 10px;
+#mobile-nav>li>.not-active span {
+  margin-top: 6px;
 }
 
-.mobile-nav>.active span {
-  margin-top: 16px;
+#mobile-nav>li>.active span {
+  margin-top: 6px;
 }
 
-.mobile-nav>.active span:nth-child(1) {
+#mobile-nav>li>.active span:nth-child(1) {
   animation: ease .7s menuTop forwards;
 }
 
-.mobile-nav>.not-active span:nth-child(1) {
+#mobile-nav>li>.not-active span:nth-child(1) {
   animation: ease .7s menuTop-2 forwards;
 }
 
-.mobile-nav>.active span:nth-child(2) {
+#mobile-nav>li>.active span:nth-child(2) {
   animation: ease .7s menuScaled forwards;
 }
 
-.mobile-nav>.not-active span:nth-child(2) {
+#mobile-nav>li>.not-active span:nth-child(2) {
   animation: ease .7s menuScaled-2 forwards;
 }
 
-.mobile-nav>.active span:nth-child(3) {
+#mobile-nav>li>.active span:nth-child(3) {
   animation: ease .7s menuBottom forwards;
 }
 
-.mobile-nav>.not-active span:nth-child(3) {
+#mobile-nav>li>.not-active span:nth-child(3) {
   animation: ease .7s menuBottom-2 forwards;
 }
 
@@ -329,24 +328,24 @@ nav>.nav-items>.nav-item:hover>a {
   }
 
   50% {
-    top: 22px;
+    top: 10px;
     transform: rotate(0);
   }
 
   100% {
-    top: 22px;
+    top: 10px;
     transform: rotate(45deg);
   }
 }
 
 @keyframes menuTop-2 {
   0% {
-    top: 22px;
+    top: 10px;
     transform: rotate(45deg);
   }
 
   50% {
-    top: 22px;
+    top: 10px;
     transform: rotate(0deg);
   }
 
@@ -363,24 +362,24 @@ nav>.nav-items>.nav-item:hover>a {
   }
 
   50% {
-    bottom: 22px;
+    bottom: 10px;
     transform: rotate(0);
   }
 
   100% {
-    bottom: 22px;
+    bottom: 10px;
     transform: rotate(135deg);
   }
 }
 
 @keyframes menuBottom-2 {
   0% {
-    bottom: 22px;
+    bottom: 10px;
     transform: rotate(135deg);
   }
 
   50% {
-    bottom: 22px;
+    bottom: 10px;
     transform: rotate(0);
   }
 

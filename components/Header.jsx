@@ -25,38 +25,41 @@ const postsTestData = [
 	},
 ]
 
-export default function Header({ posts }: any) {
+export default function Header({ posts } /* : any */) {
 	const [menu, setMenu] = useState(false)
-	const handleMenu = () => {
-		setMenu((state: boolean) => !state)
 
-		useEffect(() => {
-			const menuEl = document.getElementById('menu')
-			const links = document.getElementsByClassName('nav-link')
-			const container = document.getElementById('navbar-mobile')
+	useEffect(() => {
+		const menuEl = document.getElementsByClassName('menu')[0]
+		const links = document.getElementsByClassName('links')[0]
+		const container = document.getElementById('navbar-mobile')
 
-			// if (menu)  menuEl.className = 'active'
-			// else  menuEl.className = 'not-active'
-			// if (menu.className == 'not-active') menu.className = 'active'
-			// else menu.className = 'not-active'
+		console.log('kokot')
+		// if (menu)  menuEl.className = 'active'
+		// else  menuEl.className = 'not-active'
+		if (menu) {
+			menuEl.className = 'menu mobile-nav-item active'
+			links.className = 'links nav-items flex-col xl:flex-row justify-center pb-8 xl:pb-0'
+		} else {
+			menuEl.className = 'menu mobile-nav-item not-active'
+			links.className = 'links nav-items flex-col xl:flex-row justify-center pb-8 xl:pb-0 tbl-break-hide'
+		}
 
-			// for(var i = 0; i < links.length; i++ ) {
-			// 	if (links[i].style.display === "flex") {
-			// 		links[i].style.display = "none";
-			// 		links[i].style.flexDirection = 'unset'
-			// 		links[i].style.alignItems = 'unset'
-			// 		container.style.height='12.5vh'
-			// 		document.getElementsByTagName('body')[0].style.overflow = "auto"
-			// 	} else {
-			// 		links[i].style.display = "flex";
-			// 		links[i].style.flexDirection = 'row'
-			// 		links[i].style.alignItems = 'center'
-			// 		container.style.height='100vh'
-			// 		document.getElementsByTagName('body')[0].style.overflow = "hidden"
-			// 	}
-			// }
-		}, [])
-	}
+		// for (var i = 0; i < links.length; i++) {
+		// 	if (links[i].style.display === 'flex') {
+		// 		links[i].style.display = 'none'
+		// 		links[i].style.flexDirection = 'unset'
+		// 		links[i].style.alignItems = 'unset'
+		// 		container.style.height = '12.5vh'
+		// 		document.getElementsByTagName('body')[0].style.overflow = 'auto'
+		// 	} else {
+		// 		links[i].style.display = 'flex'
+		// 		links[i].style.flexDirection = 'row'
+		// 		links[i].style.alignItems = 'center'
+		// 		container.style.height = '100vh'
+		// 		document.getElementsByTagName('body')[0].style.overflow = 'hidden'
+		// 	}
+		// }
+	}, [menu])
 
 	return (
 		<div className="header-wrapper">
@@ -67,35 +70,37 @@ export default function Header({ posts }: any) {
 							<a className="nav-item">MEZI KOZY</a>
 						</Link>
 					</li>
-					<div id="menu" onClick={handleMenu} className="mobile-nav-item flex-col nav-item mr-2 sm:mr-8 not-active">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
+					<li onClick={() => setMenu((state) => !state)} className="flex">
+						<div className="menu mobile-nav-item nav-item not-active">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</li>
 				</ul>
-				<ul className="tbl-break-hide flex-row justify-center nav-items">
-					<li className="flex-col nav-item ">
+				<ul className="links nav-items flex-col xl:flex-row justify-center pb-8 xl:pb-0 tbl-break-hide">
+					<li className="flex-row xl:flex-col nav-item ">
 						<Link href="/">
 							<a className="nav-item ">HOME</a>
 						</Link>
 					</li>
-					<li className="flex-col nav-item ">
+					<li className="flex-row xl:flex-col nav-item ">
 						<Link href="/aktuality">
 							<a className="nav-item ">AKTUALITY</a>
 						</Link>
 					</li>
-					<li className="flex-col nav-item ">
+					<li className="flex-row xl:flex-col nav-item ">
 						<Link href="/kapela">
 							<a className="nav-item">KAPELA</a>
 						</Link>
 					</li>
-					<li className="flex-col nav-item ">
+					<li className="flex-row xl:flex-col nav-item ">
 						{/* domyslet redirect na nejaktuálnější galerii a left sidebar na orientaci v ní */}
 						<Link href="/galerie">
 							<a className="nav-item">GALERIE</a>
 						</Link>
 					</li>
-					<li className="flex-col nav-item ">
+					<li className="flex-row xl:flex-col nav-item ">
 						<Link href="/kontakty">
 							<a className="nav-item">KONTAKTY</a>
 						</Link>
