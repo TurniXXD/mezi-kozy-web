@@ -5,7 +5,7 @@ import Footer from '@components/Footer'
 import ParalaxHero from '@components/ParalaxHero'
 import Link from 'next/link'
 
-import img1 from '/public/images/paralax/3-krmelec-koncert.png'
+import img1 from '/public/images/paralax/krmel-cropped.jpg'
 
 import styles from '@styles/Kontakty.module.css'
 
@@ -14,8 +14,10 @@ export default function Kontakty({ headerPosts }) {
 		document.title = 'Mezi kozy | Kontakty'
 
 		var ifr = document.getElementById('JotFormIFrame-220642188337356')
-		var form = document.querySelectorAll('#JotFormIFrame-220642188337356 form') || document.getElementById('JotFormIFrame-220642188337356')
-		ifr.style.backgroundColor = "white"
+		var form =
+			document.querySelectorAll('#JotFormIFrame-220642188337356 form') ||
+			document.getElementById('JotFormIFrame-220642188337356')
+		ifr.style.backgroundColor = 'white'
 		//iframe.style.height = args[1] + 'px'
 		if (ifr) {
 			var src = ifr.src
@@ -112,7 +114,9 @@ export default function Kontakty({ headerPosts }) {
 	return (
 		<div className="page-wrapper">
 			<Header /* headerPosts={headerPosts} */ />
-			<ParalaxHero image={img1} />
+			<div className="subpages-hero">
+				<Image src={img1} alt="fajne" height={500} width={2000} />
+			</div>
 			<div className="container px-7 sm:px-16 mt-20">
 				<div className="flex-row justify-center sm:flex">
 					<div className="flex-col">
@@ -136,7 +140,7 @@ export default function Kontakty({ headerPosts }) {
 							/>
 						</div>
 						<div className="hide-banner"></div>
-						<div className="flex-row flex-center space-x-8">
+						<div className="flex-row flex-center space-x-8 -mt-12 z-10 relative">
 							<div className="flex-col">
 								<Link href="https://www.facebook.com/mezikozy">
 									<a target="_blank" rel="noreferrer noopener" className="nav-item">

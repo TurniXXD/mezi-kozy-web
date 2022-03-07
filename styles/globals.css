@@ -448,6 +448,13 @@ nav>.nav-items>.nav-item:hover>a {
   }
 }
 
+@media (max-width: 768px) {
+  .subpages-hero {
+    display: none !important;
+  }
+}
+
+
 /* RESPO END */
 
 /* NEXT.JS ADDITIONAL STYLES */

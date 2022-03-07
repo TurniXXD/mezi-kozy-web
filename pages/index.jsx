@@ -8,9 +8,9 @@ import Link from 'next/link'
 
 //import { homeQuery } from '@graphql/queries.graphql'
 
-import img1 from '/public/images/1-krmelec-koncert.png'
-import img2 from '/public/images/2-krmelec-koncert.png'
-import img3 from '/public/images/3-krmelec-koncert.png'
+import img1 from '/public/images/cropped-fno.jpg'
+import img2 from '/public/images/krmel-cropped-d.jpg'
+import img3 from '/public/images/1-cropped.jpg'
 
 import styles from '@styles/Home.module.css'
 

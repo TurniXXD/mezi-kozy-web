@@ -5,7 +5,7 @@ import Footer from '@components/Footer'
 import ParalaxHero from '@components/ParalaxHero'
 //import { peopleQuery } from '@graphql/queries.graphql'
 
-import img1 from '/public/images/paralax/1-krmelec-koncert.png'
+import img1 from '/public/images/paralax/4-cropped.jpg'
 
 import styles from '@styles/Kapela.module.css'
 
@@ -17,7 +17,9 @@ export default function Kapela({ headerPosts, people }: { headerPosts: any; peop
 	return (
 		<div className="page-wrapper">
 			<Header /* headerPosts={headerPosts} */ />
-			<ParalaxHero image={img1} />
+			<div className="subpages-hero">
+				<Image src={img1} alt="fajne" height={500} width={2000} />
+			</div>
 			<div className="container mt-20">
 				<div className="flex flex-wrap flex-center sm:space-x-12 md:space-x-24">
 					<div className="flex-col mb-8 md:mb-0">

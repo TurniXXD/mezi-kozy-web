@@ -6,7 +6,7 @@ import ParalaxHero from '@components/ParalaxHero'
 
 //import { galleryEventsQuery } from '@graphql/queries.graphql'
 
-import img1 from '/public/images/paralax/2-krmelec-koncert.png'
+import img1 from '/public/images/paralax/8-cropped.jpg'
 
 import styles from '@styles/Galerie.module.css'
 
@@ -18,7 +18,9 @@ export default function Galerie({ events, headerPosts }: { events: any; headerPo
 	return (
 		<div className="page-wrapper">
 			<Header /* headerPosts={headerPosts} */ />
-			<ParalaxHero image={img1} />
+			<div className="subpages-hero">
+				<Image src={img1} alt="fajne" height={500} width={2000} />
+			</div>
 			<div className="container mt-20">
 				<div className="flex-row flex-center mb-8">
 					<div className="flex-col">
